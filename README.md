@@ -34,7 +34,7 @@ Follow these steps to set up and run PROMPTER locally:
 
 ```bash
 git clone <repository-url>
-cd prompter-react-app # Or whatever your project directory is named
+cd prompter-generator # Or whatever your project directory is named
 ```
 
 ### 2. Install Dependencies
@@ -60,11 +60,11 @@ cd ..
 PROMPTER uses the Google Gemini API. You need to obtain an API key and configure it:
 
 1.  Go to the [Google AI Studio](https://ai.google.dev/) and generate a new API key.
-2.  Create a `.env` file in the root of your project.
+2.  Create a `.env` file in the `server` folder of your project.
 3.  Add your Gemini API key to the `.env` file:
 
     ```
-    VITE_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+    GEMINI_API_KEY=YOUR_GEMINI_API_KEY
     ```
     Replace `YOUR_GEMINI_API_KEY` with your actual API key.
 
@@ -113,7 +113,7 @@ The `build` command creates a `dist` directory with all the necessary files for 
 ```
 .
 ├── public/
-│   └── ... (PWA related assets)
+│   └── ... (PWA and favicon related assets)
 ├── server/
 │   └── server.js
 ├── src/
